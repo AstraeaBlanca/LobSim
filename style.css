@@ -1,0 +1,20 @@
+.body {
+    background-color: #C2BEBD; /* Dangerous Robot Color cause why not? */
+}
+
+.title {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgHolder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.button {
+    align-self: center;
+}
