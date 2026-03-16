@@ -1,8 +1,5 @@
 // Very Crackpot code btw, I'm sorry in advance
 
-// Gen Variables
-let prev = "hq720.jpg";
-
 // Dom Activities
 let title = document.createElement("h1");
 let imgHolder = document.createElement("div");
@@ -268,16 +265,48 @@ function button18(){
     img.innerHTML = img.src;
     par.innerHTML = "ggs my man!";
     titleScreen = document.createElement("button");
+    abigaleWilliams = document.createElement("button");
+    goGay = document.createElement("button");
     textHolder.removeChild(text18);
     textHolder.appendChild(titleScreen);
+    textHolder.appendChild(abigaleWilliams);
+    textHolder.appendChild(goGay);
     titleScreen.textContent = "Go Title";
     titleScreen.className = "button";
     titleScreen.addEventListener("click", returnTitle);
+    abigaleWilliams.textContent = "Call Her a Abnormality";
+    abigaleWilliams.className = "button";
+    abigaleWilliams.addEventListener("click", snitch);
+    goGay.textContent = "Become THE BoyKisser";
+    goGay.className = "button";
+    goGay.addEventListener("click", conversionTherapy);
 }
 
-function returnTitle() {
+
+
+function returnTitle() { // Normal Ending?
     img.src = "hq720.jpg";
     img.innerHTML = img.src;
     par.innerHTML = "You can't T-T";
     textHolder.removeChild(titleScreen);
+    textHolder.removeChild(abigaleWilliams);
+    textHolder.removeChild(goGay);
+}
+
+function snitch(){ // Bad Ending?
+    img.src = "Abigale.webp";
+    img.innerHTML = img.src;
+    par.innerHTML = "Angela Killed All The Witnesses...";
+    textHolder.removeChild(titleScreen);
+    textHolder.removeChild(abigaleWilliams);
+    textHolder.removeChild(goGay);
+}
+
+function conversionTherapy(){ // I Don't Even Know It's 11:23 On The Due Date Ending?
+    img.src = "conversionTherapy.jpg";
+    img.innerHTML = img.src;
+    par.innerHTML = "You Were So Hurt By This Revelation That You No Longer Like Women...";
+    textHolder.removeChild(titleScreen);
+    textHolder.removeChild(abigaleWilliams);
+    textHolder.removeChild(goGay);
 }
